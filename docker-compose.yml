@@ -6,5 +6,7 @@ services:
       - /tmp/myvol:/tmp/myvol
   runstage:
     image: runstage
+    ports:
+      - "8080:8080"
     volumes:
       - /tmp/myvol:/tmp/myvol
