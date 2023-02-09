@@ -6,6 +6,8 @@ services:
       - /tmp/myvol:/tmp/myvol
   runstage:
     image: runstage
+    depends_on:
+      - buildstage
     ports:
       - "8080:8080"
     volumes:
