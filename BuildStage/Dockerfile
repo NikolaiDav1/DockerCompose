@@ -6,4 +6,4 @@ WORKDIR /tmp/
 RUN git clone https://github.com/miladhub/calculator-servlet-example
 WORKDIR /tmp/calculator-servlet-example/
 RUN mvn package
-RUN /tmp/calculator-servlet-example/mycalcwebapp.war /tmp/myvol/
+RUN cp /tmp/calculator-servlet-example/mycalcwebapp.war /tmp/myvol/
